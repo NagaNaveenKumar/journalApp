@@ -1,0 +1,48 @@
+spring:
+  redis:
+    host: redis-14206.c305.ap-south-1-1.ec2.redns.redis-cloud.com
+    port: 14206
+    password: WKAaFmI7HHNFFziTqXkDiHDZeVdeDUo5
+  application:
+    name: myFirstEdProject
+  data:
+    mongodb:
+      uri: mongodb+srv://naveen:naveen595@cluster0.5wocl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: journaldb
+      auto-index-creation: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: naganaveenkumar2000@gmail.com
+    password: qmwq beyl ehkw opgo
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+
+
+
+server:
+  port: 8080
+  servlet:
+    context-path: /journal
+
+logging:
+  level:
+    com:
+      ed:
+        myFirstEdProject:
+          repository: INFO
+    org.springframework.security: DEBUG
+
+
+weather:
+  api:
+    key: 8cbe3eb015d8d917e24b1489a9010e35
+
