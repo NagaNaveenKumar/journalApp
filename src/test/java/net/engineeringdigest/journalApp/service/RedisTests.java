@@ -15,11 +15,12 @@ public class RedisTests {
     private RedisTemplate redisTemplate;
 
 
-    @Disabled
     @Test
     void testSendMail() {
         redisTemplate.opsForValue().set("email","gmail@email.com");
         Object salary = redisTemplate.opsForValue().get("salary");
         int a = 1;
     }
+
+
 }
